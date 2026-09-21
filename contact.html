@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="联系王秋璇 · 动画制片求职" />
+  <title>联系 · 王秋璇</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="progress-bar"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="回到首页">
+        <span class="brand-name">王秋璇</span>
+        <span class="brand-role">动画制片</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="works.html">作品集</a>
+        <a href="about.html">关于</a>
+        <a href="contact.html" class="active">联系</a>
+      </nav>
+      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false" type="button">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a href="index.html">首页</a>
+      <a href="works.html">作品集</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow rise d1">求职意向</span>
+      <h1 class="rise d2">很高兴与你聊聊</h1>
+      <p class="desc rise d3">正在寻找动画制片方向的实习机会，愿意从制片助理基础岗切入深耕。有合适的岗位或合作，欢迎联系我。</p>
+    </div>
+  </section>
+
+  <section class="section section-tight">
+    <div class="container contact-grid">
+      <!-- 联系信息 -->
+      <div class="info-list">
+        <div class="info-row reveal"><span class="k">求职方向</span><span class="v">动画制片</span></div>
+        <div class="info-row reveal" data-delay="1"><span class="k">意向岗位</span><span class="v">制片助理 · 实习</span></div>
+        <div class="info-row reveal" data-delay="2"><span class="k">邮箱</span><span class="v placeholder">待补充你的邮箱</span></div>
+        <div class="info-row reveal" data-delay="3"><span class="k">所在地</span><span class="v placeholder">待补充你的城市</span></div>
+      </div>
+
+      <!-- 表单 -->
+      <div class="reveal" data-delay="1">
+        <div class="form-card" id="form-card">
+          <form id="contact-form" novalidate>
+            <div class="form-grid two">
+              <div class="field">
+                <label for="name">你的称呼</label>
+                <input type="text" id="name" name="name" placeholder="怎么称呼你" />
+                <span class="err"></span>
+              </div>
+              <div class="field">
+                <label for="email">邮箱</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" />
+                <span class="err"></span>
+              </div>
+            </div>
+            <div class="form-grid" style="margin-top:1.5rem">
+              <div class="field">
+                <label for="subject">主题</label>
+                <input type="text" id="subject" name="subject" placeholder="例如：动画制片实习机会" />
+                <span class="err"></span>
+              </div>
+            </div>
+            <div class="form-grid" style="margin-top:1.5rem">
+              <div class="field">
+                <label for="message">留言</label>
+                <textarea id="message" name="message" placeholder="简单说说你的想法…"></textarea>
+                <span class="err"></span>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="submit" style="margin-top:1.5rem">发送留言 <span class="ar">→</span></button>
+          </form>
+        </div>
+
+        <div class="form-card form-success hidden" id="form-success">
+          <div class="icon">✓</div>
+          <h3>已收到你的来信</h3>
+          <p>感谢你的留言，我会尽快回复。</p>
+          <button class="btn btn-outline" type="button" id="reset-form">再写一封</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h4>王秋璇</h4>
+        <p>动画制片方向 · 制片助理</p>
+      </div>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="works.html">作品集</a>
+        <a href="about.html">关于</a>
+        <a href="contact.html">联系</a>
+      </nav>
+      <div class="footer-links">
+        <a href="contact.html">求职意向</a>
+        <span class="year">© <span id="year"></span> 王秋璇</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
