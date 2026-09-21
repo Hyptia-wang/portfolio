@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="王秋璇的作品集展示" />
+  <title>作品集 · 王秋璇</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="progress-bar"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="回到首页">
+        <span class="brand-name">王秋璇</span>
+        <span class="brand-role">动画制片</span>
+      </a>
+      <nav class="site-nav" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="works.html" class="active">作品集</a>
+        <a href="about.html">关于</a>
+        <a href="contact.html">联系</a>
+      </nav>
+      <button class="menu-btn" aria-label="打开菜单" aria-expanded="false" type="button">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a href="index.html">首页</a>
+      <a href="works.html">作品集</a>
+      <a href="about.html">关于</a>
+      <a href="contact.html">联系</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow rise d1">作品集</span>
+      <h1 class="rise d2">让项目跑得顺的每一步</h1>
+      <p class="desc rise d3">这里收录我参与推进的动画项目与运营实践。页面预留了扩充空间，可随时添加更多作品。</p>
+    </div>
+  </section>
+
+  <!-- 代表作品 -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">代表作品</span>
+        <h2>两部已交付的短片</h2>
+      </div>
+      <div class="grid-2" style="margin-top:2.5rem">
+        <a class="card reveal" href="contact.html">
+          <div class="card-cover"><span class="initial">短</span><span class="cat">动画短片 · 全流程</span></div>
+          <div class="card-body">
+            <h3>5 分钟短片 · 全流程统筹</h3>
+            <p>统筹一部 5 分钟动画短片从企划到交付的完整流程，带领 5 名跨岗位同学协作，2 个项目均按期交片。</p>
+            <div class="card-tags"><span class="chip">统筹</span><span class="chip">排期</span><span class="chip">跨岗位协作</span><span class="chip">按期交付</span></div>
+          </div>
+        </a>
+        <a class="card reveal" data-delay="1" href="contact.html">
+          <div class="card-cover"><span class="initial">例</span><span class="cat">动画短片 · 进度管理</span></div>
+          <div class="card-body">
+            <h3>项目例会与进度管理</h3>
+            <p>通过每周组织项目例会盯紧进度，主动协调跨环节的冲突与延期，保障项目按期推进并如期交片。</p>
+            <div class="card-tags"><span class="chip">周例会</span><span class="chip">进度跟踪</span><span class="chip">冲突协调</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 更多作品空间 -->
+  <section class="section section-tight">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">更多作品</span>
+        <h2>作品扩充区</h2>
+        <p>这里预留了位置，方便后续继续添加你的动画项目、运营案例或成长记录。把作品卡片替换进去即可。</p>
+      </div>
+      <div class="grid-3" style="margin-top:2.5rem">
+        <div class="card-placeholder reveal">
+          <span class="plus">＋</span>
+          <p>在这里添加你的作品</p>
+          <span class="hint">可放入动画短片、分镜、企划案</span>
+        </div>
+        <div class="card-placeholder reveal" data-delay="1">
+          <span class="plus">＋</span>
+          <p>在这里添加你的作品</p>
+          <span class="hint">可放入 IP 运营、周边选品案例</span>
+        </div>
+        <div class="card-placeholder reveal" data-delay="2">
+          <span class="plus">＋</span>
+          <p>在这里添加你的作品</p>
+          <span class="hint">可放入项目经历、成长记录</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tight" style="padding-bottom:2rem">
+    <div class="container" style="text-align:center">
+      <a class="btn btn-primary reveal" href="contact.html">聊聊我的求职意向 <span class="ar">→</span></a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <h4>王秋璇</h4>
+        <p>动画制片方向 · 制片助理</p>
+      </div>
+      <nav class="footer-nav" aria-label="页脚导航">
+        <a href="works.html">作品集</a>
+        <a href="about.html">关于</a>
+        <a href="contact.html">联系</a>
+      </nav>
+      <div class="footer-links">
+        <a href="contact.html">求职意向</a>
+        <span class="year">© <span id="year"></span> 王秋璇</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
