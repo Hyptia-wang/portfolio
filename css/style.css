@@ -233,8 +233,8 @@ img { max-width: 100%; }
 .info-row .k { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; color: var(--sage-600); width: 4.2rem; flex-shrink: 0; }
 .info-row .v { font-weight: 500; }
 .info-row .v.placeholder { color: var(--ink-soft); font-weight: 400; }
-.info-row .v .mail-link { color: var(--sage-600); font-weight: 500; text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
-.info-row .v .mail-link:hover { color: var(--sage-500); border-color: var(--sage-500); }
+.mail-link { color: var(--sage-600); font-weight: 500; text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+.mail-link:hover { color: var(--sage-500); border-color: var(--sage-500); }
 
 .form-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 2rem; }
 .form-grid { display: grid; gap: 1.4rem; }
